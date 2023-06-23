@@ -6,6 +6,7 @@ public class Movement : MonoBehaviour
 {
     Rigidbody rb;
     [SerializeField] float mainThrust = 10f; 
+    [SerializeField] float rotationThrust = 1f;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,17 +21,20 @@ public class Movement : MonoBehaviour
     }
     void ProcessThrust(){
         if (Input.GetKey(KeyCode.Space)){
-            Debug.Log("Space bar pressed");
            rb.AddRelativeForce(Vector3.up * mainThrust * Time.deltaTime);
         }
     }
     void ProcessRotation(){
         if (Input.GetKey(KeyCode.A)){
-            Debug.Log("Rotate Left");
+            ApplyRotation(rotationThrust);
         }
         else if (Input.GetKey(KeyCode.D)){
-            Debug.Log("Rotate Right");
+            ApplyRotation(-rotationThrust);
         }
+    }
+
+    void ApplyRotation(float rotationThisFrame){
+        transform.Rotate(Vector3.forward * rotationThisFrame * Time.deltaTime);
     }
 
 }
