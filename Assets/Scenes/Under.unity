@@ -356,10 +356,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Landing Pad
       objectReference: {fileID: 0}
-    - target: {fileID: 2937493899461351956, guid: 543454c3ee45bed419629b23eb2556de, type: 3}
-      propertyPath: m_TagString
-      value: Finish
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 543454c3ee45bed419629b23eb2556de, type: 3}
 --- !u!1001 &1013228874255260142
@@ -419,23 +415,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f8adc743b1460c4fab73673670ac293, type: 3}
---- !u!1 &1013228874255260143 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1013228873673856478, guid: 9f8adc743b1460c4fab73673670ac293, type: 3}
-  m_PrefabInstance: {fileID: 1013228874255260142}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1013228874255260151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1013228874255260143}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0418f2d4052b47a448ab5a606c02221a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1483256085066004623
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -453,7 +432,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1483256084405506969, guid: 226c8276ae5186f4ca4a1200a0179b30, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.13
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1483256084405506969, guid: 226c8276ae5186f4ca4a1200a0179b30, type: 3}
       propertyPath: m_LocalPosition.z
@@ -487,13 +466,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1483256084405506971, guid: 226c8276ae5186f4ca4a1200a0179b30, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d9b6a9f8833d5f84780b13710e01df75, type: 2}
     - target: {fileID: 1483256084405506973, guid: 226c8276ae5186f4ca4a1200a0179b30, type: 3}
       propertyPath: m_Name
       value: Obstacle
-      objectReference: {fileID: 0}
-    - target: {fileID: 1483256084405506973, guid: 226c8276ae5186f4ca4a1200a0179b30, type: 3}
-      propertyPath: m_TagString
-      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 226c8276ae5186f4ca4a1200a0179b30, type: 3}
