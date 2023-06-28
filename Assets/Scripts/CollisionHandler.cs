@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class CollisionHandler : MonoBehaviour
 {
+  [SerializeField] float levelLoadDelay = 2f;
   void OnCollisionEnter(Collision other) {
     switch(other.gameObject.tag)
     {
@@ -13,7 +14,7 @@ public class CollisionHandler : MonoBehaviour
         break;
 
         case "Finish":
-        LoadNextLevel();
+        StartSuccessSequence();
         break;
 
         case "Fuel":
@@ -26,9 +27,18 @@ public class CollisionHandler : MonoBehaviour
     }
   }
 
-  void StartCrashSequence(){
+  void StartSuccessSequence(){
+    //todo add SFX sound effect on going to next level
+    //todo add particle effect upon going to next level
     GetComponent<Movement>().enabled = false;
-    Invoke("ReloadLevel", 1f);
+    Invoke("LoadNextLevel", levelLoadDelay);
+  }
+
+  void StartCrashSequence(){
+    //todo add SFX sound effect on crashing
+    //todo add particle effect upon crash
+    GetComponent<Movement>().enabled = false;
+    Invoke("ReloadLevel", levelLoadDelay);
   }
 
   void ReloadLevel(){
