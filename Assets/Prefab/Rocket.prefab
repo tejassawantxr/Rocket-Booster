@@ -16,8 +16,6 @@ GameObject:
   - component: {fileID: 152324750}
   - component: {fileID: 1013228874255260144}
   - component: {fileID: 1013228874255260151}
-  - component: {fileID: 6414750495241593619}
-  - component: {fileID: 9103823927977370573}
   m_Layer: 0
   m_Name: Rocket
   m_TagString: Untagged
@@ -241,27 +239,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0418f2d4052b47a448ab5a606c02221a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &6414750495241593619
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1013228873673856478}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0418f2d4052b47a448ab5a606c02221a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &9103823927977370573
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1013228873673856478}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0418f2d4052b47a448ab5a606c02221a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  levelLoadDelay: 2
