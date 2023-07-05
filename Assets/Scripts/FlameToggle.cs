@@ -16,7 +16,8 @@ public class FlameToggle : MonoBehaviour
     {
         if(Input.GetKey(KeyCode.Space)){
            meshrenderer.enabled = true;
-        }else{
+        }
+        else{
             meshrenderer.enabled = false;
         }
     }
